@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainCont">
+            <header>
+                <div class="btnContainer">
+                    <button class="trigger roundButton">+</button>
+                </div>
+                <div>
+                    <h1>The Book Bag</h1>
+                    <h4>Catalog your books. Enjoy your life.</h4>
+                </div>
+    
+            </header>
+            <section class="books">
+                <!-- Insert table elements here of books in library -->
+            </section>
+        </div>
+        <footer>
+            <p>Library catalog utilizes your browser's <strong>local storage</strong> to save
+                your books. When you load this page again, your information 
+                will be restored.
+            </p>
+        </footer>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Add a book</h3>
+                    <label for="book-name">Book Name:<br></label>
+                    <input type="text" name="book-name" id="book-name"><br>
+                    <label for="book-author">Author:<br></label>
+                    <input type="text" name="book-author" id="book-author"><br>
+                    <label for="num-pages">Number of Pages:<br></label>
+                    <input type="text" name="num-pages" id="num-pages"><br>
+                    <span>I've read the book:</span><br>
+                    <input type="radio" id="yes" name="book-read" value="yes" checked="checked">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="book-read" value="no">
+                    <label for="no">No</label><br>
+                    <button class="submit-book">Submit</button><br>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
